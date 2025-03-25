@@ -1,1 +1,9 @@
-print("Michael, look at this.")
+while True: 
+    word = input("What word do you think grandma likes? ")
+
+    if len(word) < 100 and "e" not in word: 
+        print(f"Grandma doesn't like {word}")
+    else:
+        print(f"Grandma likes {word}")
+        
+    print("")
