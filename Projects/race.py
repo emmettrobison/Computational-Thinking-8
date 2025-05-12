@@ -69,7 +69,7 @@ for i in range(20):
 	x3 += random.randint(1, 21)
 	t3.goto(x3, y3)
 	time.sleep(0.5)
-	x4 += random.randint(1, 24)
+	x4 += random.randint(1, 23)
 	t4.goto(x4, y4)
 	time.sleep(0.5)
 
