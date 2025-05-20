@@ -37,21 +37,21 @@ t4 = create_sprite("can", x4,y4)
 
 # Section 4 - Movement
 for i in range(20):
-	x1 += random.randint(1, 21)
+	x1 += random.randint(1, 21) # 2nd fastest
 	t1.goto(x1, y1)
 	time.sleep(0.5)
-	x2 += random.randint(1, 19)
+	x2 += random.randint(1, 19) # 3rd fastest
 	t2.goto(x2, y2)
 	time.sleep(0.5)
-	x3 += random.randint(1, 23)
+	x3 += random.randint(1, 23) # fastest
 	t3.goto(x3, y3)
 	time.sleep(0.5)
-	x4 += random.randint(1, 16)
+	x4 += random.randint(1, 16) # slowest
 	t4.goto(x4, y4)
 	time.sleep(0.5)
 
 if x1 > x2 and x1 > x3 and x1 > x4:
-   	t1.write("Guinea Pig has taken the lead!", font=("Arial", 24, "normal"), align="center")
+   	t1.write("Guinea Pig has taken the lead!", font=("Arial", 24, "normal"), align="center") 
 if x2 > x1 and x2 > x3 and x2 > x4:
 	t2.write("Basketball has taken the lead!", font=("Arial", 24, "normal"), align="center")
 if x3 > x1 and x3 > x2 and x3 > x4:
