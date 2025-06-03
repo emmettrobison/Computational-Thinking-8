@@ -60,16 +60,16 @@ if x4 > x1 and x4 > x2 and x4 > x3:
 	t4.write("Can has taken the lead!", font=("Arial", 24, "normal"), align="center")
 
 for i in range(20):
-	x1 += random.randint(1, 22)
+	x1 += random.randint(1, 22) # 2nd fastest
 	t1.goto(x1, y1)
 	time.sleep(0.5)
-	x2 += random.randint(1, 20)
+	x2 += random.randint(1, 20) # slowest
 	t2.goto(x2, y2)
 	time.sleep(0.5)
-	x3 += random.randint(1, 21)
+	x3 += random.randint(1, 21) # 3rd fastest
 	t3.goto(x3, y3)
 	time.sleep(0.5)
-	x4 += random.randint(1, 23)
+	x4 += random.randint(1, 23) # fastest
 	t4.goto(x4, y4)
 	time.sleep(0.5)
 
